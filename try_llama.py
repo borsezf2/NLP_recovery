@@ -13,4 +13,9 @@ pipe = pipeline(
     device_map="auto"
 )
 
-pipe("code for gcd of two number in python")
+prompt = "code for gcd of two numbers in python"
+result = pipe(prompt, max_length=200, num_return_sequences=1)
+
+print(f"Prompt: {prompt}\n")
+print("Generated Text:")
+print(result[0]['generated_text'])
