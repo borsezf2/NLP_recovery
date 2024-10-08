@@ -22,16 +22,28 @@ pip install --upgrade pip
 pip install torch 
 
 # Install Transformers and related Hugging Face libraries
-pip install transformers datasets tokenizers huggingface-hub accelerate peft -y
-
+pip install transformers 
+pip install datasets 
+pip install tokenizers 
+pip install huggingface-hub 
+pip install accelerate 
+pip install peft 
 # Install additional requested libraries
-pip install bottleneck decorator ipykernel protobuf sentencepiece ollama -y
-
+pip install bottleneck
+pip install decorator
+pip install ipykernel
+pip install protobuf
+pip install sentencepiece
+pip install ollama
 # Install some useful additional libraries
-pip install numpy pandas matplotlib seaborn scikit-learn -y
-
+pip install numpy 
+pip install pandas
+pip install matplotlib
+pip install seaborn
+pip install scikit-learn
+pip install numpy
 # Install Jupyter for interactive development
-pip install jupyter -y
+pip install jupyter
 
 echo "Installation complete! To activate this environment, use:"
 echo "source nlp_env/bin/activate"
@@ -42,4 +54,4 @@ pip freeze > requirements.txt
 echo "Requirements file created: requirements.txt"
 
 # Deactivate the virtual environment
-deactivate
+# deactivate
