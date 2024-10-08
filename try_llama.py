@@ -13,7 +13,7 @@ pipe = pipeline(
     device_map="auto"
 )
 
-prompt = "code for gcd of two numbers in python"
+prompt = "code in python for factorial of a number"
 result = pipe(prompt, max_length=400, num_return_sequences=100)
 
 print(f"Prompt: {prompt}\n")
