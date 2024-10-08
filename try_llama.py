@@ -14,7 +14,7 @@ pipe = pipeline(
 )
 
 prompt = "code for gcd of two numbers in python"
-result = pipe(prompt, max_length=200, num_return_sequences=1)
+result = pipe(prompt, max_length=400, num_return_sequences=100)
 
 print(f"Prompt: {prompt}\n")
 print("Generated Text:")
