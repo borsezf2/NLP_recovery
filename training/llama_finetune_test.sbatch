@@ -2,8 +2,8 @@
 # SBATCH --job-name=job_name # Job name
 # SBATCH --output=/raid/bivascs/output.txt # Standard
 # SBATCH --error=/raid/bivascs/error.txt # Standard error
-# SBATCH --partition=dgx2 # Partition name (modify if using a
-# SBATCH --qos=dgx2 # QoS (must match the
+# SBATCH --partition=gpu2 # Partition name (modify if using a
+# SBATCH --qos=gpu2 # QoS (must match the
 # SBATCH --nodes=1 # Use 1 node
 # SBATCH --ntasks-per-node=2 # Number of tasks per node
 
