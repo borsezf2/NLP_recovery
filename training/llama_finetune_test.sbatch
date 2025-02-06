@@ -1,11 +1,11 @@
 #!/bin/bash
-SBATCH --job-name=job_name # Job name
-SBATCH --output=/raid/bivascs/output.txt # Standard
-SBATCH --error=/raid/bivascs/error.txt # Standard error
-SBATCH --partition=dgx2 # Partition name (modify if using a
-SBATCH --qos=dgx2 # QoS (must match the
-SBATCH --nodes=1 # Use 1 node
-SBATCH --ntasks-per-node=2 # Number of tasks per node
+# SBATCH --job-name=job_name # Job name
+# SBATCH --output=/raid/bivascs/output.txt # Standard
+# SBATCH --error=/raid/bivascs/error.txt # Standard error
+# SBATCH --partition=dgx2 # Partition name (modify if using a
+# SBATCH --qos=dgx2 # QoS (must match the
+# SBATCH --nodes=1 # Use 1 node
+# SBATCH --ntasks-per-node=2 # Number of tasks per node
 
 #SBATCH --gres=gpu:2 # Number of GPUs (max 8)
 #SBATCH --time=24:00:00 # Max runtime 72hrs(HH:MM:SS)
